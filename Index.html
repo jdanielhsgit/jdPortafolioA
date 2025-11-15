@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Hora, Fecha y Ubicación</title>
+  <!-- Vincula el CSS y el JS externos (crearemos styles.css y script.js en archivos separados) -->
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="card">
+    <h1>Reloj — Fecha & Ubicación</h1>
+
+    <section class="panel">
+      <h2>Hora</h2>
+      <div id="time" class="big">--:--:--</div>
+    </section>
+
+    <section class="panel">
+      <h2>Fecha</h2>
+      <div id="date">Cargando fecha...</div>
+    </section>
+
+    <section class="panel">
+      <h2>Ubicación</h2>
+      <div id="location">Obteniendo ubicación... (permite el acceso cuando el navegador lo pida)</div>
+      <ul id="coords" class="small"></ul>
+    </section>
+
+    <footer class="credits">Abre este archivo en tu navegador. Para ver la ubicación permite el acceso en el diálogo del navegador.</footer>
+  </main>
+
+  <!-- Nota: el comportamiento de geolocalización depende del navegador y del protocolo (https o archivo local). -->
+</body>
+</html>
